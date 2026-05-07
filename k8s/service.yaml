@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: streamserve
+spec:
+  selector:
+    app: streamserve
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: LoadBalancer
